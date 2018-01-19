@@ -14,14 +14,32 @@
             <h1>Contact Us</h1>
         </header>
         <main>
-            <address>
-
-            </address>
             <!-- The address is for the static address. -->
+            <address>
+                555 South Main, Nowhere, Somewhere 00000
+            </address>
+            <!-- The section will contain a contact form. -->
             <section>
+                <h2>Have a question?</h2>
+                <!-- By default, the following form has a method='get' -->
+                <!-- It is the same as <form action="contact.html" method='get'> -->
+                <!-- This form will show all information using the address bar -->
+                <!-- The alternative is method="post" which will not show in the address bar-->
+                <form action="contact.html">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" name="fullname">
+                    <label for="email">Email Address:</label>
+                    <input type="email" name="email">
+                    <label for="question">Question:</label>
+                    <textarea name="question" cols="30" rows="10"></textarea>
+                    <!-- There are two ways to create a form button -->
+                    <!-- <input type="button" value="Submit"> -->
+                    <!-- <input type="submit" value="Submit Again"> -->
+                    <button>Submit</button>
+                </form>
 
             </section>
-            <!-- The section will contain a contact form. -->
+            
         </main>
         <footer>
             <p>Made by me.</p>
